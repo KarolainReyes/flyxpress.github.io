@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Buscar vuelos</h1>
+    <div>
+        <p>Mi cuenta</p>
+        <a href="/HTML/log-out.html">Cerrar sesión</a>
+    </div>
+    <section>
+        <h2>Busqueda de vuelos</h2>
+        <form action="/HTML/available-fly.html">
+            <label for="only-destination">Solo ida</label>
+            <input type="checkbox" id="only-destination" name="only-destination">
+            <br><br>
+            <label for="origin">Origen:</label>
+            <input type="text" id="origin" name="origin" placeholder="Ingrese el origen" required>
+            <br><br>
+            <label for="destination">Destino:</label>
+            <input type="text" id="destination" name="destination" placeholder="Ingrese el destino" required>
+            <br><br>
+            <label for="departure-date">Fecha de salida:</label>
+            <input type="date" id="departure-date" name="departure-date" required>
+            <br><br>
+            <label for="return-date">Fecha de regreso:</label>
+            <input type="date" id="return-date" name="return-date">
+            <br><br>
+            <button type="submit">Buscar vuelos</button>
+        </form>
+    </section>
+</body>
+</html>
