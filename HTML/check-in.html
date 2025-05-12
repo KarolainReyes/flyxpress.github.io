@@ -6,6 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>check in</h1>
+    <div>
+        <p>Mi cuenta</p>
+        <a href="/HTML/log-out.html">Cerrar sesión</a>
+    </div>
+        <h2>Check in</h2>
+        <section>
+            <div>
+                <div>logo</div>
+                <span>05:30 am - 7:00 am</span>
+                <span>1h 30min</span>
+                <span>VAA015</span>
+                <span>cop 150.600</span>
+            </div>
+            <form action="/HTML/check-in-successful.html">
+                <p>Contacto en caso de emergencia</p>
+                <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                <br><br>
+                <input type="phone" id="phone" name="phone" placeholder="Teléfono" required>
+                <br><br>
+                <button onclick="location.href='/HTML/check-in-successful.html'">Guardar</button>
+            </form>
+        </section>
 </body>
 </html>
