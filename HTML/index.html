@@ -7,29 +7,26 @@
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    <main class="inicio">
-        <header>
-            <div class="logo"><img src="/IMAGE/logo.webp" alt="Logo de Flyxpress"></div>
+    <div id="advertencia">oiga no se meta</div>
+    <main>
+        <header class="cabeza">
+            <img src="/IMAGE/logo.webp" alt="Logo de Flyxpress">
             <h1>Iniciar sesión</h1>
         </header>
         <section>
-            <form action="/HTML/welcome.html" method="get">
-                <input type="email" id="useremail" name="useremail" placeholder="Ingrese su email" required>
-                <br><br>
-                <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
-                <br><br>
-                <input type="checkbox" id="remember" name="remember"> Recordar mis datos
-                <br><br>
+            <form action="/HTML/welcome.html" method="get" class="form">
+                <input type="email" placeholder="Ingrese su email" required>
+                <input type="password"  placeholder="Ingrese su contraseña" required>
+                <input type="checkbox" > Recordar mis datos
                 <button type="submit">Iniciar sesion</button>
-                <br><br>
                 <a href="/HTML/register.html">Crear cuenta</a>
-                <br><br>
                 <a href="/HTML/forgot-password.html">¿Haz olvidado tu Contraseña?</a>
             </form>
         </section>
+        <footer>
+            <p>© 2025 Flyxpress. Todos los derechos reservados.</p>
+        </footer>
     </main>
-    <footer>
-        <p>© 2025 Flyxpress. Todos los derechos reservados.</p>
-    </footer>
+
 </body>
 </html>

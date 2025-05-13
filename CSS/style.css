@@ -1,93 +1,37 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/*desktop*/
+
+@media screen and (min-width:768px){
+    #advertencia {
+        display: block !important;
+    }
+    main{
+        display: none !important;
+    }
     
 }
 
-.inicio{
-    background-color: rgb(255, 255, 255);
-    padding: 20%;
-    text-align: center;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/*mobile*/
 
-.inicio h1 {
-    font-size: 2.5em;
-    color: #333;
+#advertencia {
+    display: none;
 }
+body{margin: 0;}
 
-.inicio input[type="email"],
-.inicio input[type="password"] {
-    width: 600px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ff0000;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    width: 80%;
-}
-.inicio button {
-    background-color: #ff0000;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-.inicio button:hover {
-    background-color: #e60000;
-}
-.inicio a {
-    color: #ff0000;
-    text-decoration: none;
-    font-size: 16px;
-}
-.inicio a:hover {   
-    text-decoration: underline;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relativeZ;
-    bottom: 0;
+main {
+    display: block;
+    height: 100%;
     width: 100%;
 }
 
-.background {
-    background-image: linear-gradient(to right, #f8f4f4, #ff0000);
-    padding: 20%;
-    text-align: center;
-    margin: 0;
-    height: 100vh;
+/*Index*/
+
+.cabeza {width: 100%;
+    position: relative;
+    left:10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    height: 20%;
     align-items: center;
 }
 
-.superior {
-    background-color: #f8f4f4;
-    padding: 20%;
-    text-align: center;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5%;
-}
+.cabeza img{width: 20vh;}
