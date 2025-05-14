@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
-<body>
+
+<body class="body-color">
     <div id="advertencia">oiga no se meta</div>
-    <header>
-        <p>Mi cuenta</p>
-        <a href="/HTML/log-out.html">Cerrar sesión</a>
-        <h2>Crear cuenta</h2>
+    <header class="banner">
+        <img src="/IMAGE/logo-sin-fondo.png">
     </header>
-    <main>
-        <form action="/register" method="get">
+    <main class="cuerpo-paginas">
+        <h1>Registro</h1>
+        
+        <form action="/register" method="get" class="formularios">
+            <hr>
             <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
             <input type="number" id="id" name="id" placeholder="Número de identificación" required>
             <input type="email" id="useremail" name="useremail" placeholder="E-mail" required>
             <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
-            <select name="city" id="city" required> 
-                <option value=""selected>Ciudad</option>
+            <select name="city" id="city" required>
+                <option value="" selected>Ciudad</option>
                 <option value="BG">Bogotá</option>
                 <option value="BGA">Bucaramanga</option>
                 <option value="BAR">Barranquilla</option>
+            
             </select>
+            <button type="submit">Crear cuenta</button>
         </form>
-        <button type="submit">Crear cuenta</button>
-        <a href="/HTML/index.html">Ya tengo una cuenta</a>
+        
+        <a href="/HTML/login.html">Ya tengo una cuenta</a>
     </main>
     <footer>
         <p>© 2025 Flyxpress. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>

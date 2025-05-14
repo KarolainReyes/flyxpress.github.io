@@ -1,32 +1,41 @@
 /*desktop*/
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
     #advertencia {
         display: block !important;
     }
-    main, header, footer {
+
+    main,
+    header,
+    footer {
         display: none !important;
     }
-    
+
 }
 
 /*mobile*/
 #advertencia {
     display: none;
 }
-body{margin: 0;}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
 
 main {
     display: flex;
-    height: 100%;
+    height: 80%;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Index*/
 
 .cabeza {
     width: 100%;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10vh;
@@ -34,7 +43,9 @@ main {
 
 }
 
-.cabeza img {width: 20vh;}
+.cabeza img {
+    width: 20vh;
+}
 
 button {
     background-color: #ff0000;
@@ -43,6 +54,7 @@ button {
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    width: 50%;
 }
 
 button:hover {
@@ -53,19 +65,29 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
     width: 100%;
     gap: 3vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 input {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #fd0505;
     border-radius: 15px;
+    box-sizing: border-box;
 }
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fd0505;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
 input:focus {
     outline: none;
     border-color: #000000;
@@ -80,12 +102,16 @@ a:hover {
     color: #c26363;
 }
 
+.input-login {
+    width: 80%;
+}
+
 .checkbox {
     font-size: 18px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: start;
     gap: 1vh;
 }
@@ -93,16 +119,85 @@ a:hover {
 .fondo {
     display: flex;
     flex-direction: column;
-    background: linear-gradient( to right, #fffefe, #d11616);
-
+    background: linear-gradient(to right, #fffefe, #d11616);
 }
 
 footer {
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: center;
     align-items: center;
     height: 8vh;
     width: 100%;
     background-color: #ff0000;
+    height: 10%
 }
+
+#main-login {
+    height: 60%;
+}
+
+#main-registro {
+    justify-content: start;
+    gap:5vh
+}
+
+
+#boton-iniciar {
+    margin-top: 10vh;
+}
+
+.body-color {
+    background: linear-gradient(to right, #000000, #3b1616, red);
+    z-index: 0;
+}
+
+.cuerpo-paginas {
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.banner img {
+    width: 8vh;
+    padding: 2vh;
+}
+
+.formularios {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+hr {
+    width: 100%;
+    margin: 0;
+}
+
+#hr-forgot {
+    width: 80%;
+}
+
+#main-registro h1{margin-top: 4vh;}
+#formulario-recuperar{margin-top: 10vh;}
+
+.usuario{display: grid;
+grid-template-areas: "user nombre"
+                     "user cerrar";height: 20%;
+                    grid-template-columns: 20% 75%;
+                grid-template-rows: 35% 60%;width: 100%;padding: 5%;box-sizing: border-box;}
+    
+.usuario img{grid-area: user;width: 10vh;}
+.usuario h2{grid-area: nombre;margin-top: 1vh;}
+.usuario a{grid-area: cerrar;}
