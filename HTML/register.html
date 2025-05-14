@@ -13,10 +13,14 @@
     <header class="banner">
         <img src="/IMAGE/logo-sin-fondo.png">
     </header>
-    <main class="cuerpo-paginas">
+    <main class="cuerpo-paginas" id="baner-registro">
+        <div class="usuario">
+            <img src="/IMAGE/avatar.png">
+            <h2>Bienvenido Usuario</h2>
+            <a>Cerrar sesion</a>
+        </div>
         <h1>Registro</h1>
-        
-        <form action="/register" method="get" class="formularios">
+        <form action="/index.html" method="get" class="formularios">
             <hr>
             <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
             <input type="number" id="id" name="id" placeholder="Número de identificación" required>
@@ -27,12 +31,9 @@
                 <option value="BG">Bogotá</option>
                 <option value="BGA">Bucaramanga</option>
                 <option value="BAR">Barranquilla</option>
-            
             </select>
-            <button type="submit">Crear cuenta</button>
+            <a href="/index.html"><button type="submit">Crear cuenta</button></a>
         </form>
-        
-        <a href="/HTML/login.html">Ya tengo una cuenta</a>
     </main>
     <footer>
         <p>© 2025 Flyxpress. Todos los derechos reservados.</p>
@@ -40,3 +41,4 @@
 </body>
 
 </html>
+

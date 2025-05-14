@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    <div id="advertencia">oiga no se meta</div>
-    <header>
-        <p>Mi cuenta</p>
-        <a href="/HTML/log-out.html">Cerrar sesión</a>
-        <h2>Buscar vuelos</h2>
-    </header>
-    <main>
-        <section>
-            <form action="/HTML/available-fly.html">
-                <input type="checkbox" id="only-destination" name="only-destination"> Solo ida
+    <body class="body-color">
+        <div id="advertencia">oiga no se meta</div>
+        <header class="banner">
+            <img src="/IMAGE/logo-sin-fondo.png">
+        </header>
+        <main class="cuerpo-paginas">
+            <h1>Buscar vuelos</h1>
+            <form action="/HTML/available-fly.html" class="formularios">
+                <hr>
+                <div class="checkbox" id="solo-ida">
+                    <input type="checkbox">
+                    <label>Solo ida</label>
+                </div>
                 <input type="text" id="origin" name="origin" placeholder="Ingrese el origen" required>
                 <input type="text" id="destination" name="destination" placeholder="Ingrese el destino" required>
-                <input type="date" id="departure-date" name="departure-date" required>
-                <input type="date" id="return-date" name="return-date">
+                <input type="text" id="departure-date" name="departure-date" required placeholder="Fecha de salida">
+                <input type="text" id="return-date" name="return-date" placeholder="Fecha de regreso" required>
             </form>
-            <button type="submit">Buscar vuelos</button>
-        </section>
+            <a id="boton-volver" href="/HTML/avaliable-fly.html"><button type="submit">Buscar vuelos</button></a>
     </main>
     <footer>
         <p>© 2025 Flyxpress. Todos los derechos reservados.</p>

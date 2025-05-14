@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check in</title>
+    <title>Mis vuelos</title>
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body class="body-color">
@@ -17,7 +17,6 @@
             <h2>Bienvenido Usuario</h2>
             <a href="/HTML/log-out.html">Cerrar sesion</a>
         </div>
-        
         <h1>Check in</h1>
         <hr style="width: 80%;">
         <section class="checkin-section">
@@ -29,15 +28,24 @@
                 <span class="ciudad">Bogotá-Barranquilla</span>
             </div>
             <br>
-            <div class="seccion-contacto">
-                <form action="/HTML/check-in-successful.html" class="formularios">
-                    <p>Contacto en caso de emergencia</p>
-                    <input type="text" id="name" name="name" placeholder="Nombre completo" required>
-                    <input type="phone" id="phone" name="phone" placeholder="Teléfono" required>
-                    <button type="submit" id="boton-check">Enviar</button>
-                </form>
+            <div class="tarjeta-vuelo">
+                <div class="logo"><img src="/IMAGE/buscar-vuelos.png" alt="logo"></div>
+                <span class="hora">05:30 am - 7:00 am</span>
+                <span class="tiempo">1h 30min</span>
+                <span class="codigo">VAA015</span>
+                <span class="ciudad">Bogotá-Barranquilla</span>
+            </div>
+            <br>
+            <div class="tarjeta-vuelo">
+                <div class="logo"><img src="/IMAGE/buscar-vuelos.png" alt="logo"></div>
+                <span class="hora">05:30 am - 7:00 am</span>
+                <span class="tiempo">1h 30min</span>
+                <span class="codigo">VAA015</span>
+                <span class="ciudad">Bogotá-Barranquilla</span>
             </div>
         </section>
+        <button onclick="location.href='/HTML/welcome.html'">Volver</button>
+        <br>
     </main>
     <footer>
         <p>© 2025 Flyxpress. Todos los derechos reservados.</p>

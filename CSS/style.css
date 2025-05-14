@@ -94,12 +94,12 @@ input:focus {
 }
 
 a {
-    text-decoration: underline;
     color: #970202;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #c26363;
+    color: #fcb1b1;
 }
 
 .input-login {
@@ -114,6 +114,19 @@ a:hover {
     align-items: start;
     justify-content: start;
     gap: 1vh;
+}
+
+#solo-ida {
+    align-self: self-start;
+    justify-content: center;
+}
+
+#solo-ida input {
+    width: 3vh;
+}
+
+#solo-ida label {
+    width: 30vh;
 }
 
 .fondo {
@@ -139,7 +152,7 @@ footer {
 
 #main-registro {
     justify-content: start;
-    gap:5vh
+    gap: 5vh
 }
 
 
@@ -185,19 +198,257 @@ hr {
     margin: 0;
 }
 
+
 #hr-forgot {
     width: 80%;
 }
 
-#main-registro h1{margin-top: 4vh;}
-#formulario-recuperar{margin-top: 10vh;}
+#main-registro h1 {
+    margin-top: 4vh;
+   
+}
 
-.usuario{display: grid;
-grid-template-areas: "user nombre"
-                     "user cerrar";height: 20%;
-                    grid-template-columns: 20% 75%;
-                grid-template-rows: 35% 60%;width: 100%;padding: 5%;box-sizing: border-box;}
-    
-.usuario img{grid-area: user;width: 10vh;}
-.usuario h2{grid-area: nombre;margin-top: 1vh;}
-.usuario a{grid-area: cerrar;}
+#formulario-recuperar {
+    margin-top: 10vh;
+}
+
+.usuario {
+    display: grid;
+    grid-template-areas: "user nombre"
+        "user cerrar";
+    height: 20%;
+    grid-template-columns: 20% 75%;
+    grid-template-rows: 40% 50%;
+    width: 100%;
+    padding: 5%;
+    row-gap: 10%;
+    box-sizing: border-box;
+}
+
+.usuario img {
+    grid-area: user;
+    width: 10vh;
+}
+
+.usuario h2 {
+    grid-area: nombre;
+    margin-top: 1vh;
+}
+
+.usuario a {
+    grid-area: cerrar;
+}
+
+
+.tarjetas {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    flex-direction: column;
+    gap: 5vh;
+
+}
+
+.tarjeta {
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: "img descrip caracter";
+    grid-template-columns: 20% 70% 10%;
+    width: 100%;
+    padding: 5%;
+    row-gap: 10%;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+
+}
+
+.tarjeta img {
+    grid-area: img;
+    width: 90%;
+    padding: 10%;
+    box-sizing: border-box;
+
+
+}
+
+.tarjeta p {
+    grid-area: descrip;
+    font-size: 20px;
+    margin: 0%;
+    align-self: center;
+    margin-left: 3vh;
+}
+
+.tarjeta span {
+    grid-area: caracter;
+    font-size: 20px;
+    margin: 0%;
+    align-self: center;
+}
+
+.tarjeta * {
+    text-decoration: none !important;
+}
+
+.parrafo-logout {
+    border: 1px solid;
+    padding: 2vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 1px rgb(104, 12, 12);
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.checkin-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.tarjeta-vuelo {
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: "img hora codigo"
+        "img tiempo codigo"
+        "img ciudad ciudad";
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 33% 33% 33%;
+    box-sizing: border-box;
+    width: 90%;
+    height: 12vh;
+    border-radius: 15px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo {
+    grid-area: img;
+    padding: 2vh;
+    align-self: center;
+
+}
+
+
+.hora {
+    grid-area: hora;
+    font-size: 10px;
+    margin-left: 20%;
+    align-self: center;
+}
+
+.tiempo {
+    grid-area: tiempo;
+    font-size: 12px;
+    margin-left: 20%;
+    align-self: center;
+}
+
+.codigo {
+    grid-area: codigo;
+    margin-left: 20%;
+    align-self: center;
+}
+
+.ciudad {
+    grid-area: ciudad;
+    margin: 0;
+    margin-left: 10%;
+}
+
+.seccion-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 90%;
+
+}
+
+#boton-check {
+    margin-bottom: 2vh;
+}
+
+.lista-mis-vuelos {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;gap: 5vh;
+    margin-bottom: 5vh;
+}
+
+.mis-vuelos {
+    grid-template-areas: "imagen horas codigovu"
+        "imagen duracion texto"
+        "imagen fecha ciudad";
+    grid-template-columns: 15% 40% 40%;
+    grid-template-rows: auto auto auto;
+    display: grid;
+    border: 1px solid rgb(173, 173, 173);
+    box-shadow: 3px 3px 5px rgb(94, 11, 11);
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    gap: 1vh;
+    padding: 1.7vh;
+    border-radius: 10px;
+}
+
+.mis-vuelos span {
+    box-sizing: border-box;
+}
+
+#mv1 {
+    width: 100%;
+    align-self: center;
+}
+
+#mv1 {
+    grid-area: imagen;
+}
+
+#mv2 {
+    grid-area: horas
+}
+
+#mv3 {
+    grid-area: duracion;
+}
+
+#mv4 {
+    grid-area: codigovu;
+    text-align: end;
+}
+
+#mv5 {
+    grid-area: texto;
+    text-align: end;
+    font-weight: 600;
+    font-size: 1rem;
+    ;
+}
+
+#mv6 {
+    grid-area: fecha;
+}
+
+#mv7 {
+    grid-area: ciudad;
+    text-align: end;
+}
+#boton-volver {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#mainfly{height: 100vh;}

@@ -3,53 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis vuelos</title>
+    <title>Vuelos disponiles</title>
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
-<body>
+<body class="body-color">
     <div id="advertencia">oiga no se meta</div>
-    <header>
-        <p>Mi cuenta</p>
-        <a href="/HTML/log-out.html">Cerrar sesión</a>
-        <h2>Mis vuelos</h2>
+    <header class="banner">
+        <img src="/IMAGE/logo-sin-fondo.png">
     </header>
-    <main>
-        <section>
-            <div>
-                <div>logo</div>
-                <span>05:30 am - 7:00 am</span>
-                <span>1h 30min</span>
-                <span>VAA015</span>
-                <span>cop 150.600</span>
-                <span>SEP 19</span>
-                <span>A TIEMPO</span>
-                <span>Bogotá-Barranquilla</span>
+    <main class="cuerpo-paginas" id="mainfly">
+        <div class="usuario" id="divusuario">
+            <img src="/IMAGE/avatar.png">
+            <h2>Bienvenido Usuario</h2>
+            <a href="/HTML/log-out.html">Cerrar sesion</a>
+        </div>
+        
+        <h1>Mis Vuelos</h1>
+        <hr style="width: 80%;">
+        <section class="lista-mis-vuelos">
+            <div class="mis-vuelos">
+                <img id="mv1" src="/IMAGE/buscar-vuelos.png" alt="logo">
+                <span id="mv2">05:30 am - 7:00 am</span>
+                <span id="mv3">1h 30min</span>
+                <span id="mv4">VAA015</span>
+                <span  id="mv5"><p style="color: rgb(7, 112, 199);">A TIEMPO</p></span>
+                <span id="mv6">Sep 29</span>
+                <span id="mv7">Bogota-Barranquilla</span>
             </div>
-            <div>
-                <div>logo</div>
-                <span>05:30 am - 7:00 am</span>
-                <span>1h 30min</span>
-                <span>VAA015</span>
-                <span>cop 150.600</span>
-                <span>SEP 19</span>
-                <span>A TIEMPO</span>
-                <span>Bogotá-Barranquilla</span>
+            <div class="mis-vuelos">
+                <img id="mv1" src="/IMAGE/buscar-vuelos.png" alt="logo">
+                <span id="mv2">05:30 am - 7:00 am</span>
+                <span id="mv3">1h 30min</span>
+                <span id="mv4">VAA015</span>
+                <span  id="mv5"><p style="color: rgb(7, 112, 199);">A TIEMPO</p></span>
+                <span id="mv6">Sep 29</span>
+                <span id="mv7">Bucaramanga-Cali</span>
             </div>
-            <div>
-                <div>logo</div>
-                <span>05:30 am - 7:00 am</span>
-                <span>1h 30min</span>
-                <span>VAA015</span>
-                <span>cop 150.600</span>
-                <span>SEP 19</span>
-                <span>A TIEMPO</span>
-                <span>Bogotá-Barranquilla</span>
+            <div class="mis-vuelos">
+                <img id="mv1" src="/IMAGE/buscar-vuelos.png" alt="logo">
+                <span id="mv2">05:30 am - 7:00 am</span>
+                <span id="mv3">1h 30min</span>
+                <span id="mv4">VAA015</span>
+                <span  id="mv5"><p style="color:rgb(44, 102, 44);">ATERRIZÓ</p></span>
+                <span id="mv6">Sep 29</span>
+                <span id="mv7">Medellín-Ibagué</span>
             </div>
         </section>
-        <button onclick="location.href='/HTML/welcome.html'">Volver</button>
     </main>
     <footer>
         <p>© 2025 Flyxpress. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
+
