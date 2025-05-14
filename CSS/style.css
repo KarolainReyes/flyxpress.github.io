@@ -4,34 +4,34 @@
     #advertencia {
         display: block !important;
     }
-    main{
+    main, header, footer {
         display: none !important;
     }
     
 }
 
 /*mobile*/
-
 #advertencia {
     display: none;
 }
 body{margin: 0;}
 
 main {
-    display: block;
+    display: flex;
     height: 100%;
     width: 100%;
 }
 
 /*Index*/
 
-.cabeza {width: 100%;
-    position: relative;
-    left:10px;
-    display: flex;
+.cabeza {
+    width: 100%;
+    display: flex; 
     flex-direction: column;
-    height: 20%;
     align-items: center;
+    margin-top: 10vh;
+    margin-top: 2vh;
+
 }
 
 .cabeza img {width: 20vh;}
@@ -45,3 +45,56 @@ button {
     font-size: 16px;
 }
 
+button:hover {
+    background-color: #ac1e1e;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    gap: 3vh;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #fd0505;
+    border-radius: 15px;
+}
+input:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+a {
+    text-decoration: underline;
+    color: #970202;
+}
+
+a:hover {
+    color: #c26363;
+}
+
+.checkbox {
+    font-size: 18px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1vh;
+}
+
+
+footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    background-color: #ff0000;
+}

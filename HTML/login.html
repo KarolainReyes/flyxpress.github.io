@@ -8,24 +8,25 @@
 </head>
 <body>
     <div id="advertencia">oiga no se meta</div>
+    <header class="cabeza">
+        <img src="/IMAGE/logo.webp" alt="Logo de Flyxpress">
+        <h1>Iniciar sesión</h1>
+    </header>
     <main>
-        <header class="cabeza">
-            <img src="/IMAGE/logo.webp" alt="Logo de Flyxpress">
-            <h1>Iniciar sesión</h1>
-        </header>
-        <section>
-            <form action="/HTML/welcome.html" method="get" class="form">
+            <form action="/HTML/welcome.html" method="get" class="formulario">
                 <input type="email" placeholder="Ingrese su email" required>
                 <input type="password"  placeholder="Ingrese su contraseña" required>
-                <input type="checkbox" > Recordar mis datos
+                <div class="checkbox">
+                    <input type="checkbox">Recuérdame
+                </div>
                 <button type="submit">Iniciar sesion</button>
                 <a href="/HTML/register.html">Crear cuenta</a>
                 <a href="/HTML/forgot-password.html">¿Haz olvidado tu Contraseña?</a>
             </form>
-        </section>
-        <footer>
-            <p>© 2025 Flyxpress. Todos los derechos reservados.</p>
-        </footer>
     </main>
+    <br>
+    <footer>
+        <p>© 2025 Flyxpress. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

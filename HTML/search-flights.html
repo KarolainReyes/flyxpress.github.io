@@ -7,28 +7,26 @@
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
+    <div id="advertencia">oiga no se meta</div>
+    <header>
+        <p>Mi cuenta</p>
+        <a href="/HTML/log-out.html">Cerrar sesión</a>
+        <h2>Buscar vuelos</h2>
+    </header>
     <main>
-        <h1>Buscar vuelos</h1>
-        <div>
-            <p>Mi cuenta</p>
-            <a href="/HTML/log-out.html">Cerrar sesión</a>
-        </div>
         <section>
-            <h2>Busqueda de vuelos</h2>
             <form action="/HTML/available-fly.html">
-                <label for="only-destination">Solo ida</label>
-                <input type="checkbox" id="only-destination" name="only-destination">
-                <label for="origin">Origen:</label>
+                <input type="checkbox" id="only-destination" name="only-destination"> Solo ida
                 <input type="text" id="origin" name="origin" placeholder="Ingrese el origen" required>
-                <label for="destination">Destino:</label>
                 <input type="text" id="destination" name="destination" placeholder="Ingrese el destino" required>
-                <label for="departure-date">Fecha de salida:</label>
                 <input type="date" id="departure-date" name="departure-date" required>
-                <label for="return-date">Fecha de regreso:</label>
                 <input type="date" id="return-date" name="return-date">
-                <button type="submit">Buscar vuelos</button>
             </form>
+            <button type="submit">Buscar vuelos</button>
         </section>
     </main>
+    <footer>
+        <p>© 2025 Flyxpress. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
