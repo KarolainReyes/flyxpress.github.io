@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscar vuelos</title>
-    <link rel="stylesheet" href="/flyxpress.github.io/CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     <body class="body-color">
-        <div id="advertencia">oiga no se meta</div>
+        <div id="advertencia">
+        <h1>Este sitio no esta disponible para ordenadores.</h1>
+        <img src="../IMAGE/advertencia.png" alt="Señal de advertencia">
+        <p>Por favor, accede desde un dispositivo movil.</p>
+    </div>
         <header class="banner">
-            <img src="/flyxpress.github.io/IMAGE/logo-sin-fondo.png">
+            <img src="../IMAGE/logo-sin-fondo.png">
         </header>
         <main class="cuerpo-paginas">
             <h1>Buscar vuelos</h1>
-            <form action="/flyxpress.github.io/HTML/available-fly.html" class="formularios">
+            <form action="./available-fly.html" class="formularios">
                 <hr>
                 <div class="checkbox" id="solo-ida">
                     <input type="checkbox">
@@ -25,7 +29,7 @@
                 <input type="text" id="departure-date" name="departure-date" required placeholder="Fecha de salida">
                 <input type="text" id="return-date" name="return-date" placeholder="Fecha de regreso" required>
             </form>
-            <a id="boton-volver" href="/flyxpress.github.io/HTML/avaliable-fly.html"><button type="submit">Buscar vuelos</button></a>
+            <a id="boton-volver" href="./avaliable-fly.html"><button type="submit">Buscar vuelos</button></a>
     </main>
     <footer>
         <p>© 2025 Flyxpress. Todos los derechos reservados.</p>

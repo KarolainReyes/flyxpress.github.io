@@ -2,7 +2,23 @@
 
 @media screen and (min-width:768px) {
     #advertencia {
-        display: block !important;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #advertencia img {
+        width: 20vh;
+    }
+
+    body {
+        margin: 0;
+        height: 100vh;
+        background-color: #e43838;
+        display: flex;
+        justify-content: center;
     }
 
     main,
@@ -16,6 +32,7 @@
 /*mobile*/
 #advertencia {
     display: none;
+
 }
 
 body {
@@ -40,11 +57,37 @@ main {
     align-items: center;
     margin-top: 10vh;
     margin-top: 2vh;
+    position: relative;
+    overflow: hidden;
 
 }
 
 .cabeza img {
     width: 20vh;
+    animation: correr 5s linear 1 position: absolute;
+    left: 50%;
+    transform: translateX(-50%) position: relative;
+    overflow: hidden;
+    animation: correr 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
+
+}
+
+@keyframes correr {
+    0% {
+        transform: translateX(-50%)
+    }
+
+    50% {
+        transform: translateX(200%)
+    }
+
+    51% {
+        transform: translateX(-200%)
+    }
+
+    100% {
+        transform: translateX(-0%)
+    }
 }
 
 button {
@@ -55,10 +98,13 @@ button {
     border-radius: 5px;
     font-size: 16px;
     width: 50%;
+    transition: transform 0.3s;
+
 }
 
 button:hover {
     background-color: #ac1e1e;
+    transform: scale(1.05);
 }
 
 .formulario {
@@ -205,11 +251,16 @@ hr {
 
 #main-registro h1 {
     margin-top: 4vh;
-   
+
 }
 
 #formulario-recuperar {
     margin-top: 10vh;
+}
+
+#form-checkin {
+    margin-bottom: 3vh;
+
 }
 
 .usuario {
@@ -370,11 +421,15 @@ hr {
     border: 1px solid black;
     border-radius: 15px;
     width: 90%;
+    margin-bottom: 3vh;
 
 }
 
-#boton-check {
+.boton-check {
     margin-bottom: 2vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
 }
 
 .lista-mis-vuelos {
@@ -382,7 +437,8 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;gap: 5vh;
+    flex-direction: column;
+    gap: 5vh;
     margin-bottom: 5vh;
 }
 
@@ -444,6 +500,7 @@ hr {
     grid-area: ciudad;
     text-align: end;
 }
+
 #boton-volver {
     width: 100%;
     align-items: center;
@@ -451,4 +508,6 @@ hr {
     justify-content: center;
 }
 
-#mainfly{height: 100vh;}
+#mainfly {
+    height: 120vh;
+}

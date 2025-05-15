@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check in</title>
-    <link rel="stylesheet" href="/flyxpress.github.io/CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body class="body-color">
-    <div id="advertencia">oiga no se meta</div>
+    <div id="advertencia">
+        <h1>Este sitio no esta disponible para ordenadores.</h1>
+        <img src="../IMAGE/advertencia.png" alt="Señal de advertencia">
+        <p>Por favor, accede desde un dispositivo movil.</p>
+    </div>
     <header class="banner">
-        <img src="/flyxpress.github.io/IMAGE/logo-sin-fondo.png">
+        <img src="../IMAGE/logo-sin-fondo.png">
     </header>
     <main class="cuerpo-paginas">
         <div class="usuario">
-            <img src="/flyxpress.github.io/IMAGE/avatar.png">
+            <img src="../IMAGE/avatar.png">
             <h2>Bienvenido Usuario</h2>
-            <a href="/flyxpress.github.io/HTML/log-out.html">Cerrar sesion</a>
+            <a href="./log-out.html">Cerrar sesion</a>
         </div>
         
         <h1>Check in</h1>
         <hr style="width: 80%;">
         <section class="checkin-section">
             <div class="tarjeta-vuelo">
-                <div class="logo"><img src="/flyxpress.github.io/IMAGE/buscar-vuelos.png" alt="logo"></div>
+                <div class="logo"><img src="../IMAGE/buscar-vuelos.png" alt="logo"></div>
                 <span class="hora">05:30 am - 7:00 am</span>
                 <span class="tiempo">1h 30min</span>
                 <span class="codigo">VAA015</span>
@@ -30,12 +34,13 @@
             </div>
             <br>
             <div class="seccion-contacto">
-                <form action="/flyxpress.github.io/HTML/check-in-successful.html" class="formularios">
+                <form action="./check-in-successful.html" class="formularios" id="form-chekin">
                     <p>Contacto en caso de emergencia</p>
                     <input type="text" id="name" name="name" placeholder="Nombre completo" required>
                     <input type="phone" id="phone" name="phone" placeholder="Teléfono" required>
-                    <button type="submit" id="boton-check">Enviar</button>
                 </form>
+                <br>
+                <a href="./welcome.html"><button class="boton-check">Volver</button></a>
             </div>
         </section>
     </main>
